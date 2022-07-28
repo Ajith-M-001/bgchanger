@@ -1,0 +1,22 @@
+body {
+    background-color: blueviolet;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+
+div {
+    height: 130px;
+    width: 500px;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 260px;
+}
+
+select {
+    padding: 10px 40px;
+}

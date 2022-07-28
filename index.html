@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG COLOR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function change() {
+            var s = document.getElementById('color').selectedIndex;
+            if (s > 0) {
+                var s1 = document.getElementById('color').options[s].value;
+                console.log('s1')
+                document.body.style.backgroundColor = s1;
+            } else {
+                alert("please select a color")
+            }
+        } 
+    </script>
+</head>
+
+<body>
+
+    <div>
+        <h1>background Color change</h1>
+        <select name="" id="color" onchange="change()">
+            <option value="">select color</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="gold">gold</option>
+            <option value="white">white</option>
+        </select>
+    </div>
+
+</body>
+
+</html>
